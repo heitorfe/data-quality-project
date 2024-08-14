@@ -63,9 +63,13 @@ Facilita na hora de rodar comandos no terminal
 
 `
 poetry run task doc
+
 poetry run task run
+
 poetry run task test
+
 poetry run task kill
+
 poetry run task format
 `
 
@@ -75,8 +79,11 @@ Exceuta comandos configurados no pyproject.toml
 
 `
 mkdir .github
+
 cd .github
+
 mkdir workflows
+
 cd workflows
 `
 
