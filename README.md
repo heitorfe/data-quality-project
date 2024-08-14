@@ -29,4 +29,55 @@ Configurar variáveis de ambiente do poetry no PATH:
 * Clique em "OK" para salvar as mudanças.
 
 Rodar no diretório do projeto:
-`poetry init`
+`
+poetry init
+poetry shell
+poetry add mkdocs
+poetry add mkdocs-mermaid2-plugin
+poetry add mkdocs-material
+poetry add 'mkdocstrings[python]'
+poetry add taskipy 
+poetry add isort
+poetry add black
+poetry add pytest
+
+
+`
+
+## Mkdocs
+
+Comandos do mkdocs 
+
+`
+mkdocs new .
+poetry run mkdocs serve -- renderiza o mkdocs no http://127.0.0.1:8000/
+`
+
+## Marmeid
+
+Renderiza fluxogramas que pode ser gerado no Excalidraw e gera uma boa documentação no MkDocs
+
+## Taskipy
+
+Facilita na hora de rodar comandos no terminal
+
+`
+poetry run task doc
+poetry run task run
+poetry run task test
+poetry run task kill
+poetry run task format
+`
+
+Exceuta comandos configurados no pyproject.toml
+
+## Configurar CI/CD
+
+`
+mkdir .github
+cd .github
+mkdir workflows
+cd workflows
+`
+
+Criar CI.yml dentro de .github/workflows
